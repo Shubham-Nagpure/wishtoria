@@ -1,6 +1,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
+  /* Typography. Loaded via the Google Fonts <link> in app/layout.tsx;
+     named here so new code can reach them as tokens instead of
+     repeating literal family strings. */
+  --font-heading: 'Fredoka', sans-serif;
+  --font-body: 'Poppins', sans-serif;
+  --font-script: 'Caveat', cursive;
+  --font-handwritten: 'Kalam', cursive;
+
+  /* Brand colors */
   --ink: #2D1A24;
   --ink-soft: #6B5860;
   --line: #2C1123;
@@ -14,9 +23,16 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'Fredoka', sans-serif;
+  font-family: var(--font-heading);
   color: var(--ink);
   -webkit-font-smoothing: antialiased;
 }
 
 a { color: inherit; text-decoration: none; }
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 3rem);
+}

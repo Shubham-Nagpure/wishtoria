@@ -73,6 +73,11 @@ export function Landing() {
 
       <footer className={s.footer}>
         <span style={{ fontFamily: "Fredoka, sans-serif", fontWeight: 700, color: "var(--ink)" }}>🎁 wishtoria</span>
+        <span className={s.footerLinks}>
+          <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
+          <Link href="/refund">Refund Policy</Link>
+        </span>
         <span><a href={INSTA} target="_blank" rel="noopener" style={{ color: "var(--accent)", fontWeight: 600 }}>📸 Instagram</a> · Made for the ones who love out loud.</span>
       </footer>
     </div>

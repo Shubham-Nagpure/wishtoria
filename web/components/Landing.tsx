@@ -7,17 +7,6 @@ const INSTA = "https://www.instagram.com/giftme.space/";
 export function Landing() {
   return (
     <div className={s.page}>
-      <header className={s.nav}>
-        <span className={s.brand}>🎁 wishtoria</span>
-        <nav className={s.navLinks}>
-          <a href="#how">How it works</a>
-          <a href="#features">Features</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#about">About</a>
-        </nav>
-        <Link href="/create" className={s.btn}>Create Today</Link>
-      </header>
-
       <section className={s.hero}>
         <div>
           <span className={s.pill}>✨ A gift they open in a browser</span>
